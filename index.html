@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<title>Zeichenkettentrennungsmaschine</title>
+	</head>
+	<body>
+		<header>
+			<h1>Zeichenkettentrennungsmaschine</h1>
+		</header>
+		<main>
+			<section>
+				<form class="form-control" action="" onsubmit="return false">
+					<label for="longEntry"> Zu trennende Zeichenkette:</label>
+					<input type="text" id="longEntry" />
+
+					<label for="shortEntry"> Zeichenkette für die Trennungsposition:</label
+					><input type="text" id="shortEntry" />
+					<div>
+						<input type="radio" id="lot_davor" name="lot" value="davor" />
+						<label class="radio__label" for="lot_davor">davor trennen</label>
+					</div>
+					<div>
+						<input type="radio" id="lot_danach" name="lot" value="danach" />
+						<label class="radio__label" for="lot_danach">danach trennen</label>
+					</div>
+					<input type="button" onclick="validate();" value="Trennen"></button>
+				</form>
+			</section>
+		</main>
+		<footer>
+			<h2>Ausgabe</h2>
+			<div class="wrapper">
+				<div>
+					<h3>Vorderer Teil</h3>
+					<p id="firstPart"></p>
+				</div>
+				<div>
+					<h3>Hinterer Teil</h3>
+					<p id="lastPart"></p>
+				</div>
+			</div>
+		</footer>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

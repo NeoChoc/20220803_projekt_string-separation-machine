@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* GENERAL */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(to bottom, #e5f9f4 0%, #00e8ae 100%);
+	background-repeat: no-repeat;
+	font-family: 'Poppins', sans-serif;
+	height: 100vh;
+}
+
+h1 {
+	color: #00e8ae;
+	font-size: 30px;
+	font-weight: 600;
+	margin: 3% auto;
+	letter-spacing: 2px;
+}
+
+h2 {
+	color: #555;
+	font-size: 20px;
+	font-weight: 600;
+	margin: 3% auto;
+	letter-spacing: 2px;
+}
+
+h3 {
+	color: #555;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 3% auto;
+	letter-spacing: 1px;
+}
+
+p {
+	background-color: #e5f9f4;
+	border-bottom: 2px solid white;
+	border-radius: 5px;
+	margin: 8px 0;
+	padding: 12px 20px;
+	transition: width 0.4s ease-in-out;
+}
+/* HEADER */
+header {
+	margin: auto;
+	text-align: center;
+}
+
+/* MAIN */
+main {
+	margin: 0 22%;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-control {
+	line-height: 2.5em;
+	display: flex;
+	flex-direction: column;
+}
+
+/* FOOTER */
+footer {
+	margin: 3% 22%;
+}
+
+/* FORM */
+
+/* form labels */
+label {
+	margin: 3% 0 0 0;
+}
+
+/* textfield */
+input[type='text'] {
+	border: none;
+	border-bottom: 2px solid white;
+	border-radius: 5px;
+	margin: 8px 0;
+	padding: 12px 20px;
+	transition: width 0.4s ease-in-out;
+}
+
+input[type='text']:active,
+input[type='text']:focus,
+input[type='text']:focus-visible,
+input[type='text']:target {
+	outline: 2px solid #555;
+	border-radius: 5px;
+	width: 100%;
+	outline: none;
+}
+
+/* button */
+input[type='button'] {
+	background-color: #e5f9f4;
+	border: 2px solid white;
+	border-radius: 5px;
+	color: #00e8ae;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 600;
+	margin: 3% auto;
+	padding: 16px 32px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+input[type='button']:hover {
+	background-color: #00e8ae;
+	color: white;
+}
+
+/* radio_button_label */
+.radio__label {
+	margin: 3%;
+}
+
+/* radio_button_icon */
+input[type='radio']:after {
+	width: 16px;
+	height: 16px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: white;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+	width: 14px;
+	height: 14px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #00e8ae;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
